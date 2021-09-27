@@ -1,0 +1,29 @@
+<h1>create</h1>
+<form [formGroup]="personForm" (ngSubmit)="updateProduct(id)">
+  <table>
+    <tr>
+      <td>Idcode:</td>
+      <td><input type="number" formControlName="idCode"></td>
+    </tr>
+    <tr>
+      <td>name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td><input type="number" formControlName="address"></td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>Gmail</td>
+      <td><input type="text" formControlName="gmail"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Tạo mới</button></td>
+    </tr>
+  </table>
+</form>

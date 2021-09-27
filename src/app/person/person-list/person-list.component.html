@@ -1,0 +1,32 @@
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <td></td>
+  <table class="table">
+    <thead>
+    <tr>
+      <td>STT</td>
+      <td>IDCode</td>
+      <td>Name</td>
+      <td>Address</td>
+      <td>phone</td>
+      <td>Gmail</td>
+    </tr>
+    </thead>
+    <tbody *ngFor="let person of persons; index as i ">
+    <tr>
+      <td>{{i + 1}}</td>
+      <td>{{person.idCode}}</td>
+      <td>{{person.name}}</td>
+      <td>{{person.address}}</td>
+      <td>{{person.phone}}</td>
+      <td>{{person.gmail}}</td>
+      <td>
+        <button (click)="deletePerson(person.id)" type="button" class="btn btn-outline-danger">Delete</button>
+      </td>
+      <td><a [routerLink]="['/person/edit',person.id]" type="button" class="btn btn-outline-warning">Edit</a></td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>

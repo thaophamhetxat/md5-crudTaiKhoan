@@ -1,0 +1,72 @@
+
+<!--<h1>create</h1>-->
+<!--<form [formGroup]="personForm" (ngSubmit)="submit()">-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Idcode:</td>-->
+<!--      <td><input type="number" formControlName="idCode"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>name:</td>-->
+<!--      <td><input type="text" formControlName="name"></td>-->
+<!--      <span *ngIf="!personForm.get('name')?.valid &&  personForm.touched" style="color: red">Name minLenght >6</span>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>address</td>-->
+<!--      <td><input type="number" formControlName="address"></td>-->
+<!--      <span *ngIf="!personForm.get('address')?.valid &&  personForm.touched" style="color: red">not null</span>-->
+
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>phone</td>-->
+<!--      <td><input type="text" formControlName="phone"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Gmail</td>-->
+<!--      <td><input type="text" formControlName="gmail"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--      <td><button>Tạo mới</button></td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</form>-->
+
+
+<section id="contact" class="contact section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Create</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      </div>
+      <div class="col-lg-12 col-md-7">
+        <form [formGroup]="personForm" (ngSubmit)="submit()" method="post"  class="php-email-form">
+          <div class="form-group">
+            <input type="number" formControlName="idCode" class="form-control"  placeholder="Id code" required>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" formControlName="name"  placeholder="name" required>
+            <span *ngIf="!personForm.get('name')?.valid &&  personForm.touched" style="color: red">Name minLenght >6</span>
+          </div>
+          <div class="form-group mt-3">
+            <input type="number" class="form-control" formControlName="address"  placeholder="address" required>
+            <span *ngIf="!personForm.get('address')?.valid &&  personForm.touched" style="color: red">not null</span>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" formControlName="phone"  placeholder="phone" required>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" formControlName="gmail" class="form-control"  placeholder="Gmail" required>
+          </div>
+
+          <div class="text-center"><button [disabled]="personForm.invalid">Tạo mới</button></div>
+        </form>
+      </div>
+
+    </div>
+
+
+</section><!-- End Contact Us Section -->

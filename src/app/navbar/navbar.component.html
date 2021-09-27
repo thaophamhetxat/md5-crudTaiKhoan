@@ -1,0 +1,100 @@
+<header id="header">
+  <div class="container-fluid">
+
+    <div class="logo">
+      <h1><a href="index.html">Siimple</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+
+    <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#header" class="scrollto">Home</a></li>
+        <li><a href="#about" class="scrollto">About Us</a></li>
+        <li><a href="#why-us" class="scrollto">Why Us</a></li>
+        <li class="drop-down"><a href="">Drop Down</a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="drop-down"><a href="#">Drop Down 2</a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+            <li><a href="#">Drop Down 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="scrollto">Contact Us</a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+</header><!-- End #header -->
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <h1>Welcome to Siimple</h1>
+    <h2>Please, fill out the for below to be notified for the latest updates!</h2>
+
+    <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+      <div class="row no-gutters">
+        <div class="col-md-6 form-group pr-md-1">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 form-group pl-md-1">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+      </div>
+
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your notification request was sent. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Notify me!</button></div>
+    </form>
+  </div>
+</section><!-- #hero -->
+
+
+<section id="why-us" class="why-us section-bg">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/why-us-1.jpg" class="card-img-top" alt="...">
+          <div class="card-icon">
+            <i class="bx bx-book-reader"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a routerLink="/person/list">Show</a></h5>
+            <p class="card-text">Xem chi tiết thông tin người dùng</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/why-us-2.jpg" class="card-img-top" alt="...">
+          <div class="card-icon">
+            <i class="bx bx-calendar-edit"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a routerLink="/person/create">Create</a></h5>
+            <p class="card-text">Tạo mới người dùng </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Why Us Section -->
+
+
